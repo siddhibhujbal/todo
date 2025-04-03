@@ -1,4 +1,4 @@
-<html>
+<!-- <html>
   <body>
     <input type="text" id="input" />
     <button onclick="add()">add</button>
@@ -43,4 +43,36 @@
       getTasks();
     };
   </script>
+</html> -->
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Todo App</title>
+  <!-- Custom Tailwind CSS -->
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body class="bg-gray-100 min-h-screen py-12 px-4 sm:px-6">
+  <div class="max-w-md mx-auto bg-white rounded-lg shadow-md overflow-hidden">
+    <div class="px-6 py-8">
+      <h1 class="text-3xl font-bold text-center text-gray-800 mb-6">Todo List</h1>
+      
+      <div class="flex mb-6">
+        <input type="text" id="input" placeholder="Add a new task..." 
+          class="flex-1 py-3 px-4 border border-gray-300 rounded-l-md focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:border-indigo-500" />
+        <button onclick="add()" 
+          class="bg-indigo-600 hover:bg-indigo-700 text-white font-medium py-3 px-6 rounded-r-md transition duration-200">
+          Add
+        </button>
+      </div>
+      
+      <ul id="task" class="space-y-3"></ul>
+    </div>
+  </div>
+
+  <script src="app.js"></script>
+</body>
 </html>
